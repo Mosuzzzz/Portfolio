@@ -34,7 +34,7 @@ const ContentContainer = ({
                     // {/* content */}
 
                     <div
-                        key={`${SECTION_ID}-${index}-${title.replaceAll(" ", "")}`}
+                        key={`${SECTION_ID}-${index}-${title.replaceAll(/ /g, "")}`}
                         className={`grid grid-cols-[25%_75%] ${isMouseEnter[`${SECTION_ID}-${index}`] ? "bg-PrimaryHoverBg" : ""} transition-all px-2 rounded-md py-5`}
                         onMouseEnter={() => setIsMouseEnter(prev => ({ ...prev, [`${SECTION_ID}-${index}`]: true }))}
                         onMouseLeave={() => setIsMouseEnter(prev => ({ ...prev, [`${SECTION_ID}-${index}`]: false }))}
