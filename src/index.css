@@ -1,0 +1,28 @@
+/* Ensure Tailwind CSS is installed and configured correctly */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base{
+    body{
+        margin: 0;
+        @apply bg-PrimaryBg;
+        @apply text-PrimaryContent;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.new-arrow{
+    animation: fadeIn 0.5s ease-in-out;
+}
