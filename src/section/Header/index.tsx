@@ -1,10 +1,14 @@
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {data} from "../../Content/header";
+import logo from "../../assets/Mylogo.png"
 
 const Header = () => {
     return (
                   <div className='flex flex-col gap-4'>
+                    <div className="w-6/12 rounded-sm border-2 border-gray-200">
+                      <img src={logo} alt="" />
+                    </div>
                     {/* Name */}
                     <div className='text-2xl text-PrimarySubcontent font-semibold'>{data.name}</div>
                     {/* C */}
