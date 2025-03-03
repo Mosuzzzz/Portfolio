@@ -1,6 +1,6 @@
 
 import { IconType } from "react-icons";
-import { FaReact, } from "react-icons/fa";
+import { FaNodeJs, FaReact, } from "react-icons/fa";
 import { SiBun, SiCplusplus, SiCss3, SiGo, SiHtml5, SiJavascript, SiTypescript } from "react-icons/si";
 
 export type SkillItem = {
@@ -17,4 +17,5 @@ export type SkillItem = {
     { name: "C++", icon: SiCplusplus },
     { name: "Html", icon: SiHtml5 },
     { name: "Css", icon: SiCss3 },
+    { name : "Node.js", icon: FaNodeJs },
   ];
